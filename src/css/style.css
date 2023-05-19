@@ -1,0 +1,117 @@
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-image: url(../img/bg-repeat.jpg);
+  background-size: contain;
+}
+
+.main-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-container {
+  width: 400px;
+  height: 402px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+}
+
+.text-container .title {
+  width: 300px;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+}
+
+.text-container .paragraph {
+  width: 300px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.form-container {
+  width: 400px;
+  height: 402px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.form-container .form {
+  background-color: #ffffff;
+  width: 340px;
+  height: 378px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 10px;
+}
+
+.form-container .form .input {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+}
+
+.form-container .form .input.accepted {
+  border: 1px solid #3ccc87;
+}
+
+.form-container .form .input.denied {
+  border: 1px solid #f52e2e;
+}
+
+.form-container .form #message {
+  font-family: "Roboto", sans-serif;
+  resize: none;
+}
+
+.form-container .form #submit {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  border: none;
+  background-color: #3ccc87;
+  color: #ffffff;
+  margin-top: auto;
+  padding: 12px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-container .error {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 9px;
+  color: #f52e2e;
+  margin-bottom: 6px;
+  cursor: default;
+  opacity: 0;
+}
+
+.form-container .error.active{
+  opacity: 1;
+}
+
+.form-container .info {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+}
