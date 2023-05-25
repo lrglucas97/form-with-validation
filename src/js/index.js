@@ -31,12 +31,13 @@ submitButton.addEventListener("click", () => {
 });
 
 submitButton.addEventListener("click", () => {
-  if (
-    textField[0].value !== "" &&
-    textField[1].value !== "" &&
-    textField[2].value !== "" &&
-    textField[3].value !== ""
-  ) {
-    alert("Sua mensagem foi enviada com sucesso.");
+  let validFields = 0;
+  for (let i = 0; i <= textField.length; i++) {
+    if (textField[i].value !== "") {
+      validFields++;
+      if (validFields === textField.length) {
+        alert("Sua mensagem foi enviada com sucesso.");
+      }
+    }
   }
 });
