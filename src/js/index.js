@@ -29,3 +29,14 @@ submitButton.addEventListener("click", () => {
     }
   });
 });
+
+submitButton.addEventListener("click", () => {
+  if (
+    textField[0].value !== "" &&
+    textField[1].value !== "" &&
+    textField[2].value !== "" &&
+    textField[3].value !== ""
+  ) {
+    alert("Sua mensagem foi enviada com sucesso.");
+  }
+});
